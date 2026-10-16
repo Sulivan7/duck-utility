@@ -50,3 +50,24 @@ def test_every_utility_has_media(service: UtilityService) -> None:
     for game_map in service.list_maps():
         for utility in game_map.utilities:
             assert utility.media, f"{game_map.id}/{utility.id} has no media"
+
+
+def test_get_map_ignores_case_and_spaces(service: UtilityService) -> None:
+    game_map = service.get_map("  MiRaGe ")
+
+    assert game_map is not None
+    assert game_map.id == "mirage"
+
+
+def test_get_map_accepts_the_display_name(service: UtilityService) -> None:
+    game_map = service.get_map("Dust 2")
+
+    assert game_map is not None
+    assert game_map.id == "dust2"
+
+
+def test_get_utility_accepts_the_display_name(service: UtilityService) -> None:
+    utility = service.get_utility("mirage", "Market Window")
+
+    assert utility is not None
+    assert utility.id == "market-window"

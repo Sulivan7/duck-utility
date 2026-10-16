@@ -23,18 +23,29 @@ class UtilityService:
         """Return all maps, in the same order as the JSON file."""
         return list(self._maps.values())
 
-    def get_map(self, map_id: str) -> GameMap | None:
-        """Return the map with this id, or None if it doesn't exist."""
-        return self._maps.get(map_id)
+    def get_map(self, map_name: str) -> GameMap | None:
+        """Find a map by id or name (case and spaces don't matter), or return None."""
+        query = _normalize(map_name)
+        for game_map in self._maps.values():
+            if query in (game_map.id, _normalize(game_map.name)):
+                return game_map
 
-    def get_utility(self, map_id: str, utility_id: str) -> Utility | None:
-        """Return one utility of a map, or None if the map or the utility doesn't exist."""
-        game_map = self.get_map(map_id)
+        return None
+
+    def get_utility(self, map_name: str, utility_name: str) -> Utility | None:
+        """Find a utility of a map by id or name, or return None."""
+        game_map = self.get_map(map_name)
         if game_map is None:
             return None
 
+        query = _normalize(utility_name)
         for utility in game_map.utilities:
-            if utility.id == utility_id:
+            if query in (utility.id, _normalize(utility.name)):
                 return utility
 
         return None
+
+
+def _normalize(text: str) -> str:
+    """Turn user input like "  Market   Window " into "market-window"."""
+    return "-".join(text.lower().split())
