@@ -62,9 +62,10 @@ pytest
 
 ## 💬 Commands
 
-| Command | Description                |
-| ------- | -------------------------- |
-| `/ping` | Check if the bot is online |
+| Command                   | Description                                      |
+| ------------------------- | ------------------------------------------------ |
+| `/smoke <map> <position>` | Show a smoke lineup, e.g. `/smoke mirage jungle` |
+| `/ping`                   | Check if the bot is online                       |
 
 ## 🙏 Credits
 
