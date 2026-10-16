@@ -44,10 +44,10 @@ class LineupsCog(commands.Cog):
             )
             return
 
-        await interaction.response.send_message(
-            content="\n".join(utility.media),
-            embed=utility_embed(game_map, utility),
-        )
+        # Discord doesn't preview links in a message that has an embed,
+        # so the GIF links go in a second message.
+        await interaction.response.send_message(embed=utility_embed(game_map, utility))
+        await interaction.followup.send("\n".join(utility.media))
 
     @smoke.autocomplete("map_name")
     async def map_autocomplete(
