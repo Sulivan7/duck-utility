@@ -5,12 +5,13 @@ from discord import app_commands
 from discord.ext import commands
 
 from duck_utility.bot import DuckUtilityBot
+from duck_utility.embeds import maps_embed, utility_embed
 
 MAX_CHOICES = 25
 
 
 class LineupsCog(commands.Cog):
-    """The /smoke command."""
+    """The /smoke and /maps commands."""
 
     def __init__(self, bot: DuckUtilityBot) -> None:
         self.service = bot.utility_service
@@ -43,12 +44,10 @@ class LineupsCog(commands.Cog):
             )
             return
 
-        lines = [f"## 💨 {game_map.name} — {utility.name}"]
-        if utility.notes:
-            lines.append(f"⚠️ {utility.notes}")
-        lines.extend(utility.media)
-
-        await interaction.response.send_message("\n".join(lines))
+        await interaction.response.send_message(
+            content="\n".join(utility.media),
+            embed=utility_embed(game_map, utility),
+        )
 
     @smoke.autocomplete("map_name")
     async def map_autocomplete(
@@ -69,6 +68,10 @@ class LineupsCog(commands.Cog):
 
         utilities = self.service.search_utilities(map_name, current)
         return [app_commands.Choice(name=u.name, value=u.id) for u in utilities][:MAX_CHOICES]
+
+    @app_commands.command(name="maps", description="List the maps that have lineups")
+    async def maps(self, interaction: discord.Interaction) -> None:
+        await interaction.response.send_message(embed=maps_embed(self.service.list_maps()))
 
 
 async def setup(bot: DuckUtilityBot) -> None:
