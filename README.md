@@ -1,9 +1,10 @@
-# Duck-utility
+# duck-utility
 
 A Discord bot that shows **Counter-Strike 2 utility lineups** (smokes, flashes, molotovs
 and HE grenades) right in the chat.
 
 > 🚧 **Work in progress** — the bot is under active development.
+
 
 ## ✨ Features
 
