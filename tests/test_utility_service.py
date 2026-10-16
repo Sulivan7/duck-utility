@@ -71,3 +71,28 @@ def test_get_utility_accepts_the_display_name(service: UtilityService) -> None:
 
     assert utility is not None
     assert utility.id == "market-window"
+
+
+
+def test_search_maps_with_empty_query_returns_all_maps(service: UtilityService) -> None:
+    assert len(service.search_maps("")) == 7
+
+
+def test_search_maps_matches_part_of_the_name(service: UtilityService) -> None:
+    map_ids = [game_map.id for game_map in service.search_maps("DUST")]
+
+    assert map_ids == ["dust2"]
+
+
+def test_search_utilities_with_empty_query_returns_all_utilities(service: UtilityService) -> None:
+    assert len(service.search_utilities("mirage", "")) == 6
+
+
+def test_search_utilities_matches_part_of_the_name(service: UtilityService) -> None:
+    utility_ids = [utility.id for utility in service.search_utilities("mirage", "win")]
+
+    assert utility_ids == ["market-window"]
+
+
+def test_search_utilities_returns_empty_list_for_unknown_map(service: UtilityService) -> None:
+    assert service.search_utilities("cache", "") == []

@@ -46,6 +46,29 @@ class UtilityService:
         return None
 
 
+    def search_maps(self, query: str) -> list[GameMap]:
+        """Return the maps whose id or name contains the query (all maps if it's empty)."""
+        normalized = _normalize(query)
+        return [
+            game_map
+            for game_map in self._maps.values()
+            if normalized in game_map.id or normalized in _normalize(game_map.name)
+        ]
+
+    def search_utilities(self, map_name: str, query: str) -> list[Utility]:
+        """Return the utilities of a map whose id or name contains the query."""
+        game_map = self.get_map(map_name)
+        if game_map is None:
+            return []
+
+        normalized = _normalize(query)
+        return [
+            utility
+            for utility in game_map.utilities
+            if normalized in utility.id or normalized in _normalize(utility.name)
+        ]
+
+
 def _normalize(text: str) -> str:
     """Turn user input like "  Market   Window " into "market-window"."""
     return "-".join(text.lower().split())
