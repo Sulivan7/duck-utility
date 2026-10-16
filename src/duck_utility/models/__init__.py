@@ -1,0 +1,1 @@
+"""Data classes that represent the bot's domain."""
