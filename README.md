@@ -53,6 +53,13 @@ DISCORD_TOKEN=your-bot-token-here
 python -m duck_utility
 ```
 
+### Running tests
+
+```powershell
+pip install -r requirements-dev.txt
+pytest
+```
+
 ## 💬 Commands
 
 | Command | Description                |
@@ -61,7 +68,7 @@ python -m duck_utility
 
 ## 🙏 Credits
 
-Initial lineup GIFs from [Tactical Toss Tutor](https://github.com/bubfusion/Tactical-Toss-Tutor)
+Initial lineup data (55 smokes on 7 maps) from [Tactical Toss Tutor](https://github.com/bubfusion/Tactical-Toss-Tutor)
 by [@bubfusion](https://github.com/bubfusion), licensed under MIT.
 This project is an independent rewrite inspired by it.
 

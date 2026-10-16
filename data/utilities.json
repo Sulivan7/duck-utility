@@ -1,0 +1,522 @@
+{
+  "maps": [
+    {
+      "id": "mirage",
+      "name": "Mirage",
+      "utilities": [
+        {
+          "id": "jungle",
+          "name": "Jungle",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/iKj3upn"
+          ]
+        },
+        {
+          "id": "ct",
+          "name": "CT",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/a/oKP0u9A"
+          ]
+        },
+        {
+          "id": "stairs",
+          "name": "Stairs",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/49rLNUu"
+          ]
+        },
+        {
+          "id": "connector",
+          "name": "Connector",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/9u2Y08P"
+          ]
+        },
+        {
+          "id": "cat",
+          "name": "Cat",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/7wWqKUX"
+          ]
+        },
+        {
+          "id": "market-window",
+          "name": "Market Window",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/a/VbEsDo6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inferno",
+      "name": "Inferno",
+      "utilities": [
+        {
+          "id": "coffin",
+          "name": "Coffin",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/Xm2ZAeM"
+          ]
+        },
+        {
+          "id": "ct",
+          "name": "CT",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/xXfbicf"
+          ]
+        },
+        {
+          "id": "half-wall",
+          "name": "Half Wall",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/MIcZ4WK"
+          ]
+        },
+        {
+          "id": "library",
+          "name": "Library",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/t1VZ9IE"
+          ]
+        },
+        {
+          "id": "arch",
+          "name": "Arch",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/sBCAqI6"
+          ]
+        },
+        {
+          "id": "short",
+          "name": "Short",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/KSCNlHY"
+          ]
+        },
+        {
+          "id": "long",
+          "name": "Long",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/OzKDwuZ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nuke",
+      "name": "Nuke",
+      "utilities": [
+        {
+          "id": "cross",
+          "name": "Cross",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/vK7bMMC",
+            "https://imgur.com/N7534PS"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/CTvJNnM",
+            "https://imgur.com/RoDHKsB"
+          ]
+        },
+        {
+          "id": "locker",
+          "name": "Locker",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/HsQbzjT",
+            "https://imgur.com/1s7eSEi"
+          ]
+        },
+        {
+          "id": "garage",
+          "name": "Garage",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/o65YSwo",
+            "https://imgur.com/x8PuUzf"
+          ]
+        },
+        {
+          "id": "decon",
+          "name": "Decon",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/ycVfmwQ",
+            "https://imgur.com/EMf37B2"
+          ]
+        },
+        {
+          "id": "right",
+          "name": "Right",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/IkORnKL",
+            "https://imgur.com/3UL4eBq"
+          ]
+        },
+        {
+          "id": "unbreakable",
+          "name": "Unbreakable",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/g8dkN8x",
+            "https://imgur.com/77EWSFX"
+          ]
+        },
+        {
+          "id": "lurk",
+          "name": "Lurk",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/AXgpP4y",
+            "https://imgur.com/dvRkJi3"
+          ]
+        },
+        {
+          "id": "mini",
+          "name": "Mini",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/mW2t4kQ",
+            "https://imgur.com/c7DZJnQ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "overpass",
+      "name": "Overpass",
+      "utilities": [
+        {
+          "id": "heaven",
+          "name": "Heaven",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/05Tgd87"
+          ]
+        },
+        {
+          "id": "heaven-2",
+          "name": "Heaven 2",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/o2F50ma"
+          ]
+        },
+        {
+          "id": "bathroom",
+          "name": "Bathroom",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/Q7EBDtt"
+          ]
+        },
+        {
+          "id": "garbage",
+          "name": "Garbage",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/tdz4nzK"
+          ]
+        },
+        {
+          "id": "bank",
+          "name": "Bank",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/siFBiSz"
+          ]
+        },
+        {
+          "id": "cross",
+          "name": "Cross",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/1FDi8np"
+          ]
+        },
+        {
+          "id": "ramp",
+          "name": "Ramp",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/EZlW9ee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vertigo",
+      "name": "Vertigo",
+      "utilities": [
+        {
+          "id": "a-left",
+          "name": "A Left",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/eQrvQ9N",
+            "https://imgur.com/NWb7hHM"
+          ]
+        },
+        {
+          "id": "a-right",
+          "name": "A Right",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/81yaPTs",
+            "https://imgur.com/BOQWlEE"
+          ]
+        },
+        {
+          "id": "boost",
+          "name": "Boost",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/88LzrIv",
+            "https://imgur.com/LMzNecp"
+          ]
+        },
+        {
+          "id": "mid-heaven",
+          "name": "Mid Heaven",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/i7ZzrTj",
+            "https://imgur.com/kQhOFSa"
+          ]
+        },
+        {
+          "id": "b-headshot",
+          "name": "B Headshot",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/8qKATMI",
+            "https://imgur.com/433jTiK"
+          ]
+        },
+        {
+          "id": "gen-right",
+          "name": "Gen Right",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/DG1UT2h",
+            "https://imgur.com/CbvUiZV"
+          ]
+        },
+        {
+          "id": "gen-left",
+          "name": "Gen Left",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/V4gB1Tp",
+            "https://imgur.com/ZcXtNfZ"
+          ]
+        },
+        {
+          "id": "a-ramp",
+          "name": "A Ramp",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/ogsC8Cp",
+            "https://imgur.com/Uy841QS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anubis",
+      "name": "Anubis",
+      "utilities": [
+        {
+          "id": "window",
+          "name": "Window",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/b1YAWOV",
+            "https://imgur.com/9vo2GX7"
+          ]
+        },
+        {
+          "id": "connector",
+          "name": "Connector",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/CR5U3Xt",
+            "https://imgur.com/N8AyjY9"
+          ]
+        },
+        {
+          "id": "connector-deep",
+          "name": "Connector Deep",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/Tay7XPE",
+            "https://imgur.com/vRXRlkk"
+          ]
+        },
+        {
+          "id": "temple-mid",
+          "name": "Temple Mid",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/37vPkUV",
+            "https://imgur.com/XFa33vy"
+          ]
+        },
+        {
+          "id": "b-left-fast",
+          "name": "B Left Fast",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/11jJhI0",
+            "https://imgur.com/kXYXAen"
+          ]
+        },
+        {
+          "id": "b-left",
+          "name": "B Left",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/P7fBUTM",
+            "https://imgur.com/IYyiDfz"
+          ]
+        },
+        {
+          "id": "temple",
+          "name": "Temple",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/VaVOA52",
+            "https://imgur.com/Kr1N6U0"
+          ]
+        },
+        {
+          "id": "b-ct",
+          "name": "B CT",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/Cg8XxPU",
+            "https://imgur.com/BCKp4nP"
+          ]
+        },
+        {
+          "id": "b-right",
+          "name": "B Right",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/CdiLuUo",
+            "https://imgur.com/0nCYOqr"
+          ]
+        },
+        {
+          "id": "a-lurk",
+          "name": "A Lurk",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/fssJf9r",
+            "https://imgur.com/pUCMU1z"
+          ]
+        },
+        {
+          "id": "heaven",
+          "name": "Heaven",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/vS0gOWK",
+            "https://imgur.com/bBnugST"
+          ],
+          "notes": "This is a W + jump throw"
+        },
+        {
+          "id": "camera",
+          "name": "Camera",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/eercpSO",
+            "https://imgur.com/nkn27pT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dust2",
+      "name": "Dust 2",
+      "utilities": [
+        {
+          "id": "xbox",
+          "name": "Xbox",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/9lfPEug",
+            "https://imgur.com/0WMiA4H"
+          ]
+        },
+        {
+          "id": "corner",
+          "name": "Corner",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/5oEoMP5",
+            "https://imgur.com/NDBnxCP"
+          ]
+        },
+        {
+          "id": "cross",
+          "name": "Cross",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/F6BDTCr",
+            "https://imgur.com/0WMiA4H"
+          ]
+        },
+        {
+          "id": "ct-b",
+          "name": "CT B",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/8zwtSQX",
+            "https://imgur.com/mbMH8BX"
+          ]
+        },
+        {
+          "id": "window",
+          "name": "Window",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/qzPvD03",
+            "https://imgur.com/A6nEm5Q"
+          ]
+        },
+        {
+          "id": "b-door",
+          "name": "B Door",
+          "type": "smoke",
+          "media": [
+            "https://imgur.com/bXirDue",
+            "https://imgur.com/KHlu4sQ"
+          ]
+        }
+      ]
+    }
+  ]
+}
