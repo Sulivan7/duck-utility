@@ -5,12 +5,12 @@ and HE grenades) right in the chat.
 
 > 🚧 **Work in progress** — the bot is under active development.
 
-## ✨ Planned features
+## ✨ Features
 
-- `/smoke <map> <position>` — get a GIF showing exactly where to aim and how to throw
-- Autocomplete for maps and positions while you type
-- Support for smokes, flashes, molotovs and HE grenades
-- Clean embed responses
+- [x] `/smoke <map> <position>` — get a GIF showing exactly where to aim and how to throw
+- [x] Autocomplete for maps and positions while you type
+- [ ] Support for flashes, molotovs and HE grenades
+- [ ] Clean embed responses
 
 ## 🛠️ Tech stack
 
