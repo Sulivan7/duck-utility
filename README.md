@@ -10,7 +10,7 @@ and HE grenades) right in the chat.
 - [x] `/smoke <map> <position>` — get a GIF showing exactly where to aim and how to throw
 - [x] Autocomplete for maps and positions while you type
 - [ ] Support for flashes, molotovs and HE grenades
-- [ ] Clean embed responses
+- [x] Clean embed responses
 
 ## 🛠️ Tech stack
 
@@ -65,6 +65,8 @@ pytest
 | Command                   | Description                                      |
 | ------------------------- | ------------------------------------------------ |
 | `/smoke <map> <position>` | Show a smoke lineup, e.g. `/smoke mirage jungle` |
+| `/maps`                   | List the maps that have lineups                  |
+| `/help`                   | Show all the bot commands                        |
 | `/ping`                   | Check if the bot is online                       |
 
 ## 🙏 Credits
