@@ -7,3 +7,7 @@ name = "duck-utility"
 version = "0.1.0"
 description = "Discord bot that shows CS2 utility lineups"
 requires-python = ">=3.14"
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
