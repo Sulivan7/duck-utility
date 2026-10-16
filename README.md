@@ -21,6 +21,18 @@ and HE grenades) right in the chat.
 
 Setup instructions will be added as soon as the first version of the bot is ready.
 
+### Environment variables
+
+Create a `.env` file at the project root (it is already ignored by git):
+
+```dotenv
+DISCORD_TOKEN=your-bot-token-here
+```
+
+| Variable        | Required | Description                                                                                     |
+| --------------- | -------- | ----------------------------------------------------------------------------------------------- |
+| `DISCORD_TOKEN` | Yes      | Your bot token from the [Discord Developer Portal](https://discord.com/developers/applications) |
+
 ## 🙏 Credits
 
 Initial lineup GIFs from [Tactical Toss Tutor](https://github.com/bubfusion/Tactical-Toss-Tutor)
