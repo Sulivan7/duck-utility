@@ -6,6 +6,8 @@ from discord.ext import commands
 
 from duck_utility.bot import DuckUtilityBot
 
+MAX_CHOICES = 25
+
 
 class LineupsCog(commands.Cog):
     """The /smoke command."""
@@ -47,6 +49,26 @@ class LineupsCog(commands.Cog):
         lines.extend(utility.media)
 
         await interaction.response.send_message("\n".join(lines))
+
+    @smoke.autocomplete("map_name")
+    async def map_autocomplete(
+        self, interaction: discord.Interaction, current: str
+    ) -> list[app_commands.Choice[str]]:
+        """Suggest maps while the user types."""
+        maps = self.service.search_maps(current)
+        return [app_commands.Choice(name=m.name, value=m.id) for m in maps][:MAX_CHOICES]
+
+    @smoke.autocomplete("position")
+    async def position_autocomplete(
+        self, interaction: discord.Interaction, current: str
+    ) -> list[app_commands.Choice[str]]:
+        """Suggest positions of the map the user already picked."""
+        map_name = interaction.namespace.map
+        if not map_name:
+            return []
+
+        utilities = self.service.search_utilities(map_name, current)
+        return [app_commands.Choice(name=u.name, value=u.id) for u in utilities][:MAX_CHOICES]
 
 
 async def setup(bot: DuckUtilityBot) -> None:
